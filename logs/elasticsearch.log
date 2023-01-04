@@ -1,0 +1,498 @@
+[2022-09-23T00:56:18,967][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] version[7.15.0], pid[76441], build[default/tar/79d65f6e357953a5b3cbcc5e2c7c21073d89aa29/2021-09-16T03:05:29.143308416Z], OS[Mac OS X/11.5/x86_64], JVM[Eclipse Foundation/OpenJDK 64-Bit Server VM/16.0.2/16.0.2+7]
+[2022-09-23T00:56:18,971][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] JVM home [/Users/dave/iWorks/fastcampus/training/elasticsearch/jdk.app/Contents/Home], using bundled JDK [true]
+[2022-09-23T00:56:18,972][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms8192m, -Xmx8192m, -XX:MaxDirectMemorySize=4294967296, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=25, -Des.path.home=/Users/dave/iWorks/fastcampus/training/elasticsearch, -Des.path.conf=/Users/dave/iWorks/fastcampus/training/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2022-09-23T00:56:21,604][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [aggs-matrix-stats]
+[2022-09-23T00:56:21,605][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [analysis-common]
+[2022-09-23T00:56:21,605][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [constant-keyword]
+[2022-09-23T00:56:21,605][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [frozen-indices]
+[2022-09-23T00:56:21,605][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-common]
+[2022-09-23T00:56:21,606][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-geoip]
+[2022-09-23T00:56:21,606][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-user-agent]
+[2022-09-23T00:56:21,606][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [kibana]
+[2022-09-23T00:56:21,606][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-expression]
+[2022-09-23T00:56:21,607][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-mustache]
+[2022-09-23T00:56:21,607][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-painless]
+[2022-09-23T00:56:21,607][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [mapper-extras]
+[2022-09-23T00:56:21,607][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [mapper-version]
+[2022-09-23T00:56:21,607][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [parent-join]
+[2022-09-23T00:56:21,608][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [percolator]
+[2022-09-23T00:56:21,608][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [rank-eval]
+[2022-09-23T00:56:21,608][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [reindex]
+[2022-09-23T00:56:21,608][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repositories-metering-api]
+[2022-09-23T00:56:21,608][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repository-encrypted]
+[2022-09-23T00:56:21,609][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repository-url]
+[2022-09-23T00:56:21,609][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [runtime-fields-common]
+[2022-09-23T00:56:21,609][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [search-business-rules]
+[2022-09-23T00:56:21,609][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [searchable-snapshots]
+[2022-09-23T00:56:21,609][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [snapshot-repo-test-kit]
+[2022-09-23T00:56:21,610][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [spatial]
+[2022-09-23T00:56:21,610][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [transform]
+[2022-09-23T00:56:21,610][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [transport-netty4]
+[2022-09-23T00:56:21,610][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [unsigned-long]
+[2022-09-23T00:56:21,610][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [vector-tile]
+[2022-09-23T00:56:21,611][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [vectors]
+[2022-09-23T00:56:21,611][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [wildcard]
+[2022-09-23T00:56:21,611][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-aggregate-metric]
+[2022-09-23T00:56:21,611][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-analytics]
+[2022-09-23T00:56:21,611][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-async]
+[2022-09-23T00:56:21,612][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-async-search]
+[2022-09-23T00:56:21,612][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-autoscaling]
+[2022-09-23T00:56:21,612][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ccr]
+[2022-09-23T00:56:21,612][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-core]
+[2022-09-23T00:56:21,613][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-data-streams]
+[2022-09-23T00:56:21,613][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-deprecation]
+[2022-09-23T00:56:21,613][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-enrich]
+[2022-09-23T00:56:21,613][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-eql]
+[2022-09-23T00:56:21,613][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-fleet]
+[2022-09-23T00:56:21,613][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-graph]
+[2022-09-23T00:56:21,614][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-identity-provider]
+[2022-09-23T00:56:21,614][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ilm]
+[2022-09-23T00:56:21,614][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-logstash]
+[2022-09-23T00:56:21,614][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ml]
+[2022-09-23T00:56:21,614][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-monitoring]
+[2022-09-23T00:56:21,614][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ql]
+[2022-09-23T00:56:21,615][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-rollup]
+[2022-09-23T00:56:21,615][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-security]
+[2022-09-23T00:56:21,615][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-shutdown]
+[2022-09-23T00:56:21,615][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-sql]
+[2022-09-23T00:56:21,615][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-stack]
+[2022-09-23T00:56:21,616][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-text-structure]
+[2022-09-23T00:56:21,616][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-voting-only-node]
+[2022-09-23T00:56:21,616][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-watcher]
+[2022-09-23T00:56:21,616][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded plugin [analysis-arirang]
+[2022-09-23T00:56:21,706][INFO ][o.e.e.NodeEnvironment    ] [daves-MacBook-Pro.local] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [140.3gb], net total_space [465.6gb], types [apfs]
+[2022-09-23T00:56:21,706][INFO ][o.e.e.NodeEnvironment    ] [daves-MacBook-Pro.local] heap size [8gb], compressed ordinary object pointers [true]
+[2022-09-23T00:56:21,744][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] node name [daves-MacBook-Pro.local], node ID [IUnpkDbmRNuNEdZzf2sIgA], cluster name [elasticsearch], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2022-09-23T00:56:25,486][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [daves-MacBook-Pro.local] [controller/76493] [Main.cc@122] controller (64 bit): Version 7.15.0 (Build d0ab43b6c551f8) Copyright (c) 2021 Elasticsearch BV
+[2022-09-23T00:56:25,957][INFO ][o.e.x.s.a.s.FileRolesStore] [daves-MacBook-Pro.local] parsed [0] roles from file [/Users/dave/iWorks/fastcampus/training/elasticsearch/config/roles.yml]
+[2022-09-23T00:56:26,575][INFO ][o.e.i.g.LocalDatabases   ] [daves-MacBook-Pro.local] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/Users/dave/iWorks/fastcampus/training/elasticsearch/config/ingest-geoip] for changes
+[2022-09-23T00:56:26,576][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] initialized database registry, using geoip-databases directory [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA]
+[2022-09-23T00:56:27,137][INFO ][o.e.t.NettyAllocator     ] [daves-MacBook-Pro.local] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2022-09-23T00:56:27,200][INFO ][o.e.d.DiscoveryModule    ] [daves-MacBook-Pro.local] using discovery type [zen] and seed hosts providers [settings]
+[2022-09-23T00:56:27,605][INFO ][o.e.g.DanglingIndicesState] [daves-MacBook-Pro.local] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2022-09-23T00:56:28,004][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] initialized
+[2022-09-23T00:56:28,004][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] starting ...
+[2022-09-23T00:56:28,070][INFO ][o.e.x.s.c.f.PersistentCache] [daves-MacBook-Pro.local] persistent cache index loaded
+[2022-09-23T00:56:28,204][INFO ][o.e.t.TransportService   ] [daves-MacBook-Pro.local] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2022-09-23T00:56:28,501][WARN ][o.e.b.BootstrapChecks    ] [daves-MacBook-Pro.local] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2022-09-23T00:56:28,513][INFO ][o.e.c.c.ClusterBootstrapService] [daves-MacBook-Pro.local] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2022-09-23T00:56:31,515][INFO ][o.e.c.c.Coordinator      ] [daves-MacBook-Pro.local] setting initial configuration to VotingConfiguration{IUnpkDbmRNuNEdZzf2sIgA}
+[2022-09-23T00:56:31,875][INFO ][o.e.c.s.MasterService    ] [daves-MacBook-Pro.local] elected-as-master ([1] nodes joined)[{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{wIkyBUHkRiOj0rD3tpVHmg}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, delta: master node changed {previous [], current [{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{wIkyBUHkRiOj0rD3tpVHmg}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-09-23T00:56:32,001][INFO ][o.e.c.c.CoordinationState] [daves-MacBook-Pro.local] cluster UUID set to [bGmXJupNTiCHOB76FHwB-Q]
+[2022-09-23T00:56:32,150][INFO ][o.e.c.s.ClusterApplierService] [daves-MacBook-Pro.local] master node changed {previous [], current [{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{wIkyBUHkRiOj0rD3tpVHmg}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+[2022-09-23T00:56:32,211][INFO ][o.e.h.AbstractHttpServerTransport] [daves-MacBook-Pro.local] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2022-09-23T00:56:32,225][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] started
+[2022-09-23T00:56:32,347][INFO ][o.e.g.GatewayService     ] [daves-MacBook-Pro.local] recovered [0] indices into cluster_state
+[2022-09-23T00:56:32,520][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [.ml-anomalies-] for index patterns [.ml-anomalies-*]
+[2022-09-23T00:56:32,671][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [.ml-state] for index patterns [.ml-state*]
+[2022-09-23T00:56:32,844][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [.ml-notifications-000002] for index patterns [.ml-notifications-000002]
+[2022-09-23T00:56:32,992][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [.ml-stats] for index patterns [.ml-stats-*]
+[2022-09-23T00:56:33,170][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [metrics-mappings]
+[2022-09-23T00:56:33,316][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [synthetics-mappings]
+[2022-09-23T00:56:33,458][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [synthetics-settings]
+[2022-09-23T00:56:33,606][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [metrics-settings]
+[2022-09-23T00:56:33,747][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [logs-settings]
+[2022-09-23T00:56:33,898][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [data-streams-mappings]
+[2022-09-23T00:56:34,039][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [logs-mappings]
+[2022-09-23T00:56:34,235][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [.watch-history-13] for index patterns [.watcher-history-13*]
+[2022-09-23T00:56:34,372][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [ilm-history] for index patterns [ilm-history-5*]
+[2022-09-23T00:56:34,522][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [.slm-history] for index patterns [.slm-history-5*]
+[2022-09-23T00:56:34,706][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [.deprecation-indexing-settings]
+[2022-09-23T00:56:34,866][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding component template [.deprecation-indexing-mappings]
+[2022-09-23T00:56:35,004][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding template [.monitoring-alerts-7] for index patterns [.monitoring-alerts-7]
+[2022-09-23T00:56:35,168][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding template [.monitoring-es] for index patterns [.monitoring-es-7-*]
+[2022-09-23T00:56:35,331][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding template [.monitoring-kibana] for index patterns [.monitoring-kibana-7-*]
+[2022-09-23T00:56:35,456][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding template [.monitoring-logstash] for index patterns [.monitoring-logstash-7-*]
+[2022-09-23T00:56:35,602][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding template [.monitoring-beats] for index patterns [.monitoring-beats-7-*]
+[2022-09-23T00:56:35,731][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [metrics] for index patterns [metrics-*-*]
+[2022-09-23T00:56:35,878][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [synthetics] for index patterns [synthetics-*-*]
+[2022-09-23T00:56:36,040][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [logs] for index patterns [logs-*-*]
+[2022-09-23T00:56:36,200][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding index template [.deprecation-indexing-template] for index patterns [.logs-deprecation.*]
+[2022-09-23T00:56:36,484][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [ml-size-based-ilm-policy]
+[2022-09-23T00:56:36,666][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [logs]
+[2022-09-23T00:56:36,814][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [synthetics]
+[2022-09-23T00:56:36,955][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [metrics]
+[2022-09-23T00:56:37,109][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [watch-history-ilm-policy]
+[2022-09-23T00:56:37,259][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [ilm-history-ilm-policy]
+[2022-09-23T00:56:37,404][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [slm-history-ilm-policy]
+[2022-09-23T00:56:37,545][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [.deprecation-indexing-ilm-policy]
+[2022-09-23T00:56:37,681][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [.fleet-actions-results-ilm-policy]
+[2022-09-23T00:56:37,999][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updating geoip databases
+[2022-09-23T00:56:38,000][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2022-09-23T00:56:38,192][INFO ][o.e.l.LicenseService     ] [daves-MacBook-Pro.local] license [25b0a7c8-4d17-4c5d-bc79-82d5bde73837] mode [basic] - valid
+[2022-09-23T00:56:38,194][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [daves-MacBook-Pro.local] Active license is now [BASIC]; Security is disabled
+[2022-09-23T00:56:38,194][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [daves-MacBook-Pro.local] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security.
+[2022-09-23T00:56:38,868][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updating geoip database [GeoLite2-ASN.mmdb]
+[2022-09-23T00:56:39,415][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [.geoip_databases] creating index, cause [auto(bulk api)], templates [], shards [1]/[0]
+[2022-09-23T00:56:40,098][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.geoip_databases][0]]]).
+[2022-09-23T00:56:41,397][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-ASN.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb.tmp.gz]
+[2022-09-23T00:56:41,407][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updated geoip database [GeoLite2-ASN.mmdb]
+[2022-09-23T00:56:41,422][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updating geoip database [GeoLite2-City.mmdb]
+[2022-09-23T00:56:41,603][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb]
+[2022-09-23T00:56:46,075][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-City.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb.tmp.gz]
+[2022-09-23T00:56:46,084][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updated geoip database [GeoLite2-City.mmdb]
+[2022-09-23T00:56:46,085][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updating geoip database [GeoLite2-Country.mmdb]
+[2022-09-23T00:56:47,521][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-Country.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb.tmp.gz]
+[2022-09-23T00:56:47,532][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updated geoip database [GeoLite2-Country.mmdb]
+[2022-09-23T00:56:47,621][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb]
+[2022-09-23T00:56:47,989][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb]
+[2022-09-23T01:11:11,738][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [keyword_index] creating index, cause [auto(bulk api)], templates [], shards [1]/[1]
+[2022-09-23T01:11:12,728][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [keyword_index/r52pBSVVRpy3InbmoKheEw] create_mapping [_doc]
+[2022-09-23T01:27:10,920][INFO ][o.e.x.m.p.NativeController] [daves-MacBook-Pro.local] Native controller process has stopped - no new native processes can be started
+[2022-09-23T01:27:10,943][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] stopping ...
+[2022-09-23T01:27:11,025][INFO ][o.e.x.w.WatcherService   ] [daves-MacBook-Pro.local] stopping watch service, reason [shutdown initiated]
+[2022-09-23T01:27:11,032][INFO ][o.e.x.w.WatcherLifeCycleService] [daves-MacBook-Pro.local] watcher has stopped and shutdown
+[2022-09-23T01:27:11,365][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] stopped
+[2022-09-23T01:27:11,365][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] closing ...
+[2022-09-23T01:27:11,417][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [daves-MacBook-Pro.local] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb]
+[2022-09-23T01:27:11,418][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [daves-MacBook-Pro.local] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb]
+[2022-09-23T01:27:11,418][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [daves-MacBook-Pro.local] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-7165988040532996748/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb]
+[2022-09-23T01:27:11,422][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] closed
+[2022-09-23T01:30:57,605][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] version[7.15.0], pid[84766], build[default/tar/79d65f6e357953a5b3cbcc5e2c7c21073d89aa29/2021-09-16T03:05:29.143308416Z], OS[Mac OS X/11.5/x86_64], JVM[Eclipse Foundation/OpenJDK 64-Bit Server VM/16.0.2/16.0.2+7]
+[2022-09-23T01:30:57,610][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] JVM home [/Users/dave/iWorks/fastcampus/training/elasticsearch/jdk.app/Contents/Home], using bundled JDK [true]
+[2022-09-23T01:30:57,611][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-9427531104331914924, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms8192m, -Xmx8192m, -XX:MaxDirectMemorySize=4294967296, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=25, -Des.path.home=/Users/dave/iWorks/fastcampus/training/elasticsearch, -Des.path.conf=/Users/dave/iWorks/fastcampus/training/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2022-09-23T01:31:01,111][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [aggs-matrix-stats]
+[2022-09-23T01:31:01,124][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [analysis-common]
+[2022-09-23T01:31:01,124][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [constant-keyword]
+[2022-09-23T01:31:01,125][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [frozen-indices]
+[2022-09-23T01:31:01,125][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-common]
+[2022-09-23T01:31:01,125][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-geoip]
+[2022-09-23T01:31:01,125][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-user-agent]
+[2022-09-23T01:31:01,125][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [kibana]
+[2022-09-23T01:31:01,125][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-expression]
+[2022-09-23T01:31:01,126][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-mustache]
+[2022-09-23T01:31:01,126][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-painless]
+[2022-09-23T01:31:01,126][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [mapper-extras]
+[2022-09-23T01:31:01,126][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [mapper-version]
+[2022-09-23T01:31:01,126][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [parent-join]
+[2022-09-23T01:31:01,126][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [percolator]
+[2022-09-23T01:31:01,127][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [rank-eval]
+[2022-09-23T01:31:01,127][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [reindex]
+[2022-09-23T01:31:01,127][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repositories-metering-api]
+[2022-09-23T01:31:01,127][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repository-encrypted]
+[2022-09-23T01:31:01,127][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repository-url]
+[2022-09-23T01:31:01,127][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [runtime-fields-common]
+[2022-09-23T01:31:01,128][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [search-business-rules]
+[2022-09-23T01:31:01,128][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [searchable-snapshots]
+[2022-09-23T01:31:01,128][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [snapshot-repo-test-kit]
+[2022-09-23T01:31:01,128][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [spatial]
+[2022-09-23T01:31:01,128][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [transform]
+[2022-09-23T01:31:01,128][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [transport-netty4]
+[2022-09-23T01:31:01,129][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [unsigned-long]
+[2022-09-23T01:31:01,129][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [vector-tile]
+[2022-09-23T01:31:01,129][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [vectors]
+[2022-09-23T01:31:01,129][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [wildcard]
+[2022-09-23T01:31:01,129][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-aggregate-metric]
+[2022-09-23T01:31:01,129][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-analytics]
+[2022-09-23T01:31:01,130][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-async]
+[2022-09-23T01:31:01,130][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-async-search]
+[2022-09-23T01:31:01,130][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-autoscaling]
+[2022-09-23T01:31:01,130][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ccr]
+[2022-09-23T01:31:01,130][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-core]
+[2022-09-23T01:31:01,130][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-data-streams]
+[2022-09-23T01:31:01,130][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-deprecation]
+[2022-09-23T01:31:01,131][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-enrich]
+[2022-09-23T01:31:01,131][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-eql]
+[2022-09-23T01:31:01,131][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-fleet]
+[2022-09-23T01:31:01,131][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-graph]
+[2022-09-23T01:31:01,131][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-identity-provider]
+[2022-09-23T01:31:01,131][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ilm]
+[2022-09-23T01:31:01,131][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-logstash]
+[2022-09-23T01:31:01,132][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ml]
+[2022-09-23T01:31:01,132][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-monitoring]
+[2022-09-23T01:31:01,132][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ql]
+[2022-09-23T01:31:01,132][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-rollup]
+[2022-09-23T01:31:01,132][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-security]
+[2022-09-23T01:31:01,132][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-shutdown]
+[2022-09-23T01:31:01,133][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-sql]
+[2022-09-23T01:31:01,133][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-stack]
+[2022-09-23T01:31:01,133][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-text-structure]
+[2022-09-23T01:31:01,133][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-voting-only-node]
+[2022-09-23T01:31:01,133][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-watcher]
+[2022-09-23T01:31:01,134][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded plugin [analysis-arirang]
+[2022-09-23T01:31:01,186][INFO ][o.e.e.NodeEnvironment    ] [daves-MacBook-Pro.local] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [139.3gb], net total_space [465.6gb], types [apfs]
+[2022-09-23T01:31:01,186][INFO ][o.e.e.NodeEnvironment    ] [daves-MacBook-Pro.local] heap size [8gb], compressed ordinary object pointers [true]
+[2022-09-23T01:31:01,293][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] node name [daves-MacBook-Pro.local], node ID [IUnpkDbmRNuNEdZzf2sIgA], cluster name [elasticsearch], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2022-09-23T01:31:05,659][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [daves-MacBook-Pro.local] [controller/84789] [Main.cc@122] controller (64 bit): Version 7.15.0 (Build d0ab43b6c551f8) Copyright (c) 2021 Elasticsearch BV
+[2022-09-23T01:31:06,176][INFO ][o.e.x.s.a.s.FileRolesStore] [daves-MacBook-Pro.local] parsed [0] roles from file [/Users/dave/iWorks/fastcampus/training/elasticsearch/config/roles.yml]
+[2022-09-23T01:31:06,783][INFO ][o.e.i.g.LocalDatabases   ] [daves-MacBook-Pro.local] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/Users/dave/iWorks/fastcampus/training/elasticsearch/config/ingest-geoip] for changes
+[2022-09-23T01:31:06,785][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] initialized database registry, using geoip-databases directory [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-9427531104331914924/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA]
+[2022-09-23T01:31:07,554][INFO ][o.e.t.NettyAllocator     ] [daves-MacBook-Pro.local] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2022-09-23T01:31:07,624][INFO ][o.e.d.DiscoveryModule    ] [daves-MacBook-Pro.local] using discovery type [zen] and seed hosts providers [settings]
+[2022-09-23T01:31:08,052][INFO ][o.e.g.DanglingIndicesState] [daves-MacBook-Pro.local] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2022-09-23T01:31:08,500][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] initialized
+[2022-09-23T01:31:08,501][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] starting ...
+[2022-09-23T01:31:08,573][INFO ][o.e.x.s.c.f.PersistentCache] [daves-MacBook-Pro.local] persistent cache index loaded
+[2022-09-23T01:31:08,697][INFO ][o.e.t.TransportService   ] [daves-MacBook-Pro.local] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2022-09-23T01:31:09,144][WARN ][o.e.b.BootstrapChecks    ] [daves-MacBook-Pro.local] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2022-09-23T01:31:09,145][INFO ][o.e.c.c.Coordinator      ] [daves-MacBook-Pro.local] cluster UUID [bGmXJupNTiCHOB76FHwB-Q]
+[2022-09-23T01:31:09,154][INFO ][o.e.c.c.ClusterBootstrapService] [daves-MacBook-Pro.local] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2022-09-23T01:31:09,328][INFO ][o.e.c.s.MasterService    ] [daves-MacBook-Pro.local] elected-as-master ([1] nodes joined)[{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{_aykcfpYQX-ViMH-uqd87A}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 2, version: 50, delta: master node changed {previous [], current [{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{_aykcfpYQX-ViMH-uqd87A}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-09-23T01:31:09,487][INFO ][o.e.c.s.ClusterApplierService] [daves-MacBook-Pro.local] master node changed {previous [], current [{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{_aykcfpYQX-ViMH-uqd87A}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 2, version: 50, reason: Publication{term=2, version=50}
+[2022-09-23T01:31:09,543][INFO ][o.e.h.AbstractHttpServerTransport] [daves-MacBook-Pro.local] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2022-09-23T01:31:09,544][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] started
+[2022-09-23T01:31:09,890][INFO ][o.e.l.LicenseService     ] [daves-MacBook-Pro.local] license [25b0a7c8-4d17-4c5d-bc79-82d5bde73837] mode [basic] - valid
+[2022-09-23T01:31:09,891][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [daves-MacBook-Pro.local] Active license is now [BASIC]; Security is disabled
+[2022-09-23T01:31:09,891][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [daves-MacBook-Pro.local] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security.
+[2022-09-23T01:31:09,897][INFO ][o.e.g.GatewayService     ] [daves-MacBook-Pro.local] recovered [2] indices into cluster_state
+[2022-09-23T01:31:11,141][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updating geoip databases
+[2022-09-23T01:31:11,142][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2022-09-23T01:31:11,143][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.geoip_databases][0], [keyword_index][0]]]).
+[2022-09-23T01:31:11,353][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-Country.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-9427531104331914924/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb.tmp.gz]
+[2022-09-23T01:31:11,374][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-ASN.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-9427531104331914924/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb.tmp.gz]
+[2022-09-23T01:31:11,374][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-City.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-9427531104331914924/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb.tmp.gz]
+[2022-09-23T01:31:11,749][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-9427531104331914924/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb]
+[2022-09-23T01:31:11,784][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-9427531104331914924/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb]
+[2022-09-23T01:31:12,159][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2022-09-23T01:31:12,353][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2022-09-23T01:31:12,557][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2022-09-23T01:31:13,162][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-9427531104331914924/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb]
+[2022-09-23T02:12:00,600][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] version[7.15.0], pid[14372], build[default/tar/79d65f6e357953a5b3cbcc5e2c7c21073d89aa29/2021-09-16T03:05:29.143308416Z], OS[Mac OS X/11.5/x86_64], JVM[Eclipse Foundation/OpenJDK 64-Bit Server VM/16.0.2/16.0.2+7]
+[2022-09-23T02:12:00,605][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] JVM home [/Users/dave/iWorks/fastcampus/training/elasticsearch/jdk.app/Contents/Home], using bundled JDK [true]
+[2022-09-23T02:12:00,606][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms8192m, -Xmx8192m, -XX:MaxDirectMemorySize=4294967296, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=25, -Des.path.home=/Users/dave/iWorks/fastcampus/training/elasticsearch, -Des.path.conf=/Users/dave/iWorks/fastcampus/training/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2022-09-23T02:12:03,266][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [aggs-matrix-stats]
+[2022-09-23T02:12:03,266][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [analysis-common]
+[2022-09-23T02:12:03,266][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [constant-keyword]
+[2022-09-23T02:12:03,267][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [frozen-indices]
+[2022-09-23T02:12:03,267][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-common]
+[2022-09-23T02:12:03,267][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-geoip]
+[2022-09-23T02:12:03,267][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-user-agent]
+[2022-09-23T02:12:03,268][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [kibana]
+[2022-09-23T02:12:03,268][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-expression]
+[2022-09-23T02:12:03,268][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-mustache]
+[2022-09-23T02:12:03,268][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-painless]
+[2022-09-23T02:12:03,268][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [mapper-extras]
+[2022-09-23T02:12:03,269][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [mapper-version]
+[2022-09-23T02:12:03,269][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [parent-join]
+[2022-09-23T02:12:03,269][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [percolator]
+[2022-09-23T02:12:03,269][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [rank-eval]
+[2022-09-23T02:12:03,269][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [reindex]
+[2022-09-23T02:12:03,270][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repositories-metering-api]
+[2022-09-23T02:12:03,270][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repository-encrypted]
+[2022-09-23T02:12:03,270][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repository-url]
+[2022-09-23T02:12:03,270][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [runtime-fields-common]
+[2022-09-23T02:12:03,270][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [search-business-rules]
+[2022-09-23T02:12:03,271][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [searchable-snapshots]
+[2022-09-23T02:12:03,271][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [snapshot-repo-test-kit]
+[2022-09-23T02:12:03,271][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [spatial]
+[2022-09-23T02:12:03,271][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [transform]
+[2022-09-23T02:12:03,271][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [transport-netty4]
+[2022-09-23T02:12:03,272][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [unsigned-long]
+[2022-09-23T02:12:03,272][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [vector-tile]
+[2022-09-23T02:12:03,272][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [vectors]
+[2022-09-23T02:12:03,272][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [wildcard]
+[2022-09-23T02:12:03,272][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-aggregate-metric]
+[2022-09-23T02:12:03,273][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-analytics]
+[2022-09-23T02:12:03,273][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-async]
+[2022-09-23T02:12:03,273][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-async-search]
+[2022-09-23T02:12:03,273][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-autoscaling]
+[2022-09-23T02:12:03,273][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ccr]
+[2022-09-23T02:12:03,273][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-core]
+[2022-09-23T02:12:03,274][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-data-streams]
+[2022-09-23T02:12:03,274][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-deprecation]
+[2022-09-23T02:12:03,274][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-enrich]
+[2022-09-23T02:12:03,274][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-eql]
+[2022-09-23T02:12:03,275][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-fleet]
+[2022-09-23T02:12:03,275][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-graph]
+[2022-09-23T02:12:03,275][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-identity-provider]
+[2022-09-23T02:12:03,275][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ilm]
+[2022-09-23T02:12:03,275][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-logstash]
+[2022-09-23T02:12:03,275][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ml]
+[2022-09-23T02:12:03,276][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-monitoring]
+[2022-09-23T02:12:03,276][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ql]
+[2022-09-23T02:12:03,276][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-rollup]
+[2022-09-23T02:12:03,276][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-security]
+[2022-09-23T02:12:03,276][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-shutdown]
+[2022-09-23T02:12:03,277][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-sql]
+[2022-09-23T02:12:03,277][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-stack]
+[2022-09-23T02:12:03,277][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-text-structure]
+[2022-09-23T02:12:03,277][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-voting-only-node]
+[2022-09-23T02:12:03,277][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-watcher]
+[2022-09-23T02:12:03,278][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded plugin [analysis-arirang]
+[2022-09-23T02:12:03,332][INFO ][o.e.e.NodeEnvironment    ] [daves-MacBook-Pro.local] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [136.6gb], net total_space [465.6gb], types [apfs]
+[2022-09-23T02:12:03,332][INFO ][o.e.e.NodeEnvironment    ] [daves-MacBook-Pro.local] heap size [8gb], compressed ordinary object pointers [true]
+[2022-09-23T02:12:03,421][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] node name [daves-MacBook-Pro.local], node ID [IUnpkDbmRNuNEdZzf2sIgA], cluster name [elasticsearch], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2022-09-23T02:12:08,833][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [daves-MacBook-Pro.local] [controller/14442] [Main.cc@122] controller (64 bit): Version 7.15.0 (Build d0ab43b6c551f8) Copyright (c) 2021 Elasticsearch BV
+[2022-09-23T02:12:09,342][INFO ][o.e.x.s.a.s.FileRolesStore] [daves-MacBook-Pro.local] parsed [0] roles from file [/Users/dave/iWorks/fastcampus/training/elasticsearch/config/roles.yml]
+[2022-09-23T02:12:09,946][INFO ][o.e.i.g.LocalDatabases   ] [daves-MacBook-Pro.local] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/Users/dave/iWorks/fastcampus/training/elasticsearch/config/ingest-geoip] for changes
+[2022-09-23T02:12:09,947][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] initialized database registry, using geoip-databases directory [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA]
+[2022-09-23T02:12:10,614][INFO ][o.e.t.NettyAllocator     ] [daves-MacBook-Pro.local] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2022-09-23T02:12:10,682][INFO ][o.e.d.DiscoveryModule    ] [daves-MacBook-Pro.local] using discovery type [zen] and seed hosts providers [settings]
+[2022-09-23T02:12:11,146][INFO ][o.e.g.DanglingIndicesState] [daves-MacBook-Pro.local] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2022-09-23T02:12:11,682][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] initialized
+[2022-09-23T02:12:11,682][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] starting ...
+[2022-09-23T02:12:11,752][INFO ][o.e.x.s.c.f.PersistentCache] [daves-MacBook-Pro.local] persistent cache index loaded
+[2022-09-23T02:12:11,877][INFO ][o.e.t.TransportService   ] [daves-MacBook-Pro.local] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2022-09-23T02:12:12,329][WARN ][o.e.b.BootstrapChecks    ] [daves-MacBook-Pro.local] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2022-09-23T02:12:12,330][INFO ][o.e.c.c.Coordinator      ] [daves-MacBook-Pro.local] cluster UUID [bGmXJupNTiCHOB76FHwB-Q]
+[2022-09-23T02:12:12,341][INFO ][o.e.c.c.ClusterBootstrapService] [daves-MacBook-Pro.local] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2022-09-23T02:12:12,500][INFO ][o.e.c.s.MasterService    ] [daves-MacBook-Pro.local] elected-as-master ([1] nodes joined)[{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{mo39hE2mQ2i8ug8-HP2X1Q}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 3, version: 59, delta: master node changed {previous [], current [{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{mo39hE2mQ2i8ug8-HP2X1Q}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-09-23T02:12:12,664][INFO ][o.e.c.s.ClusterApplierService] [daves-MacBook-Pro.local] master node changed {previous [], current [{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{mo39hE2mQ2i8ug8-HP2X1Q}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 3, version: 59, reason: Publication{term=3, version=59}
+[2022-09-23T02:12:12,732][INFO ][o.e.h.AbstractHttpServerTransport] [daves-MacBook-Pro.local] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2022-09-23T02:12:12,733][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] started
+[2022-09-23T02:12:13,098][INFO ][o.e.l.LicenseService     ] [daves-MacBook-Pro.local] license [25b0a7c8-4d17-4c5d-bc79-82d5bde73837] mode [basic] - valid
+[2022-09-23T02:12:13,099][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [daves-MacBook-Pro.local] Active license is now [BASIC]; Security is disabled
+[2022-09-23T02:12:13,100][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [daves-MacBook-Pro.local] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security.
+[2022-09-23T02:12:13,107][INFO ][o.e.g.GatewayService     ] [daves-MacBook-Pro.local] recovered [2] indices into cluster_state
+[2022-09-23T02:12:14,518][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updating geoip databases
+[2022-09-23T02:12:14,519][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2022-09-23T02:12:14,521][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[keyword_index][0], [.geoip_databases][0]]]).
+[2022-09-23T02:12:14,729][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-Country.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb.tmp.gz]
+[2022-09-23T02:12:14,769][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-ASN.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb.tmp.gz]
+[2022-09-23T02:12:14,770][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-City.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb.tmp.gz]
+[2022-09-23T02:12:15,061][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb]
+[2022-09-23T02:12:15,113][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb]
+[2022-09-23T02:12:15,497][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2022-09-23T02:12:15,725][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2022-09-23T02:12:15,993][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2022-09-23T02:12:16,779][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb]
+[2022-09-23T02:13:24,972][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding template [logstash] for index patterns [logstash-*]
+[2022-09-23T02:15:48,069][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001] creating index, cause [api], templates [], shards [1]/[1]
+[2022-09-23T02:15:48,094][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] updating number_of_replicas to [0] for indices [.kibana_7.15.0_001]
+[2022-09-23T02:15:49,066][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [.kibana_task_manager_7.15.0_001] creating index, cause [api], templates [], shards [1]/[1]
+[2022-09-23T02:15:49,079][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] updating number_of_replicas to [0] for indices [.kibana_task_manager_7.15.0_001]
+[2022-09-23T02:15:53,994][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [.apm-custom-link] creating index, cause [api], templates [], shards [1]/[1]
+[2022-09-23T02:15:53,997][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] updating number_of_replicas to [0] for indices [.apm-custom-link]
+[2022-09-23T02:15:54,499][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [.apm-agent-configuration] creating index, cause [api], templates [], shards [1]/[1]
+[2022-09-23T02:15:54,515][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] updating number_of_replicas to [0] for indices [.apm-agent-configuration]
+[2022-09-23T02:15:57,005][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_task_manager_7.15.0_001/hJJAHJtPQc2Juhf8qQh6bw] update_mapping [_doc]
+[2022-09-23T02:15:57,078][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001/hyE7ukUyR6aUcfurlz486g] update_mapping [_doc]
+[2022-09-23T02:15:57,739][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001/hyE7ukUyR6aUcfurlz486g] update_mapping [_doc]
+[2022-09-23T02:15:58,296][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001/hyE7ukUyR6aUcfurlz486g] update_mapping [_doc]
+[2022-09-23T02:15:59,021][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [kibana-event-log-policy]
+[2022-09-23T02:15:59,345][INFO ][o.e.x.i.a.TransportPutLifecycleAction] [daves-MacBook-Pro.local] adding index lifecycle policy [kibana-reporting]
+[2022-09-23T02:15:59,656][INFO ][o.e.c.m.MetadataIndexTemplateService] [daves-MacBook-Pro.local] adding template [.kibana-event-log-7.15.0-template] for index patterns [.kibana-event-log-7.15.0-*]
+[2022-09-23T02:16:00,132][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [.kibana-event-log-7.15.0-000001] creating index, cause [api], templates [.kibana-event-log-7.15.0-template], shards [1]/[1]
+[2022-09-23T02:16:00,134][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] updating number_of_replicas to [0] for indices [.kibana-event-log-7.15.0-000001]
+[2022-09-23T02:16:00,710][INFO ][o.e.x.i.IndexLifecycleTransition] [daves-MacBook-Pro.local] moving index [.kibana-event-log-7.15.0-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [kibana-event-log-policy]
+[2022-09-23T02:16:01,913][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001/hyE7ukUyR6aUcfurlz486g] update_mapping [_doc]
+[2022-09-23T02:16:02,474][INFO ][o.e.x.i.IndexLifecycleTransition] [daves-MacBook-Pro.local] moving index [.kibana-event-log-7.15.0-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [kibana-event-log-policy]
+[2022-09-23T02:16:02,950][INFO ][o.e.x.i.IndexLifecycleTransition] [daves-MacBook-Pro.local] moving index [.kibana-event-log-7.15.0-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [kibana-event-log-policy]
+[2022-09-23T02:16:05,119][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [.ds-ilm-history-5-2022.09.22-000001] creating index, cause [initialize_data_stream], templates [ilm-history], shards [1]/[0]
+[2022-09-23T02:16:05,126][INFO ][o.e.c.m.MetadataCreateDataStreamService] [daves-MacBook-Pro.local] adding data stream [ilm-history-5] with write index [.ds-ilm-history-5-2022.09.22-000001], backing indices [], and aliases []
+[2022-09-23T02:16:05,748][INFO ][o.e.x.i.IndexLifecycleTransition] [daves-MacBook-Pro.local] moving index [.ds-ilm-history-5-2022.09.22-000001] from [null] to [{"phase":"new","action":"complete","name":"complete"}] in policy [ilm-history-ilm-policy]
+[2022-09-23T02:16:07,278][INFO ][o.e.x.i.IndexLifecycleTransition] [daves-MacBook-Pro.local] moving index [.ds-ilm-history-5-2022.09.22-000001] from [{"phase":"new","action":"complete","name":"complete"}] to [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] in policy [ilm-history-ilm-policy]
+[2022-09-23T02:16:07,617][INFO ][o.e.x.i.IndexLifecycleTransition] [daves-MacBook-Pro.local] moving index [.ds-ilm-history-5-2022.09.22-000001] from [{"phase":"hot","action":"unfollow","name":"branch-check-unfollow-prerequisites"}] to [{"phase":"hot","action":"rollover","name":"check-rollover-ready"}] in policy [ilm-history-ilm-policy]
+[2022-09-23T02:18:00,308][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] stopping ...
+[2022-09-23T02:18:00,307][INFO ][o.e.x.m.p.NativeController] [daves-MacBook-Pro.local] Native controller process has stopped - no new native processes can be started
+[2022-09-23T02:18:00,371][INFO ][o.e.x.w.WatcherService   ] [daves-MacBook-Pro.local] stopping watch service, reason [shutdown initiated]
+[2022-09-23T02:18:00,379][INFO ][o.e.x.w.WatcherLifeCycleService] [daves-MacBook-Pro.local] watcher has stopped and shutdown
+[2022-09-23T02:18:02,838][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] stopped
+[2022-09-23T02:18:02,840][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] closing ...
+[2022-09-23T02:18:02,888][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [daves-MacBook-Pro.local] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb]
+[2022-09-23T02:18:02,888][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [daves-MacBook-Pro.local] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb]
+[2022-09-23T02:18:02,889][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [daves-MacBook-Pro.local] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-10786015867903929580/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb]
+[2022-09-23T02:18:02,899][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] closed
+[2022-09-23T02:22:21,461][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] version[7.15.0], pid[18056], build[default/tar/79d65f6e357953a5b3cbcc5e2c7c21073d89aa29/2021-09-16T03:05:29.143308416Z], OS[Mac OS X/11.5/x86_64], JVM[Eclipse Foundation/OpenJDK 64-Bit Server VM/16.0.2/16.0.2+7]
+[2022-09-23T02:22:21,466][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] JVM home [/Users/dave/iWorks/fastcampus/training/elasticsearch/jdk.app/Contents/Home], using bundled JDK [true]
+[2022-09-23T02:22:21,467][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17733648369807620902, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms8192m, -Xmx8192m, -XX:MaxDirectMemorySize=4294967296, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=25, -Des.path.home=/Users/dave/iWorks/fastcampus/training/elasticsearch, -Des.path.conf=/Users/dave/iWorks/fastcampus/training/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2022-09-23T02:22:26,034][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [aggs-matrix-stats]
+[2022-09-23T02:22:26,034][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [analysis-common]
+[2022-09-23T02:22:26,034][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [constant-keyword]
+[2022-09-23T02:22:26,034][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [frozen-indices]
+[2022-09-23T02:22:26,035][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-common]
+[2022-09-23T02:22:26,035][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-geoip]
+[2022-09-23T02:22:26,035][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [ingest-user-agent]
+[2022-09-23T02:22:26,035][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [kibana]
+[2022-09-23T02:22:26,035][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-expression]
+[2022-09-23T02:22:26,036][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-mustache]
+[2022-09-23T02:22:26,036][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [lang-painless]
+[2022-09-23T02:22:26,036][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [mapper-extras]
+[2022-09-23T02:22:26,036][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [mapper-version]
+[2022-09-23T02:22:26,036][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [parent-join]
+[2022-09-23T02:22:26,037][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [percolator]
+[2022-09-23T02:22:26,037][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [rank-eval]
+[2022-09-23T02:22:26,037][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [reindex]
+[2022-09-23T02:22:26,037][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repositories-metering-api]
+[2022-09-23T02:22:26,037][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repository-encrypted]
+[2022-09-23T02:22:26,038][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [repository-url]
+[2022-09-23T02:22:26,038][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [runtime-fields-common]
+[2022-09-23T02:22:26,038][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [search-business-rules]
+[2022-09-23T02:22:26,038][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [searchable-snapshots]
+[2022-09-23T02:22:26,039][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [snapshot-repo-test-kit]
+[2022-09-23T02:22:26,039][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [spatial]
+[2022-09-23T02:22:26,039][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [transform]
+[2022-09-23T02:22:26,039][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [transport-netty4]
+[2022-09-23T02:22:26,039][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [unsigned-long]
+[2022-09-23T02:22:26,040][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [vector-tile]
+[2022-09-23T02:22:26,040][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [vectors]
+[2022-09-23T02:22:26,040][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [wildcard]
+[2022-09-23T02:22:26,040][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-aggregate-metric]
+[2022-09-23T02:22:26,040][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-analytics]
+[2022-09-23T02:22:26,040][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-async]
+[2022-09-23T02:22:26,041][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-async-search]
+[2022-09-23T02:22:26,041][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-autoscaling]
+[2022-09-23T02:22:26,041][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ccr]
+[2022-09-23T02:22:26,041][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-core]
+[2022-09-23T02:22:26,041][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-data-streams]
+[2022-09-23T02:22:26,042][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-deprecation]
+[2022-09-23T02:22:26,042][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-enrich]
+[2022-09-23T02:22:26,042][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-eql]
+[2022-09-23T02:22:26,042][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-fleet]
+[2022-09-23T02:22:26,043][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-graph]
+[2022-09-23T02:22:26,043][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-identity-provider]
+[2022-09-23T02:22:26,043][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ilm]
+[2022-09-23T02:22:26,043][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-logstash]
+[2022-09-23T02:22:26,043][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ml]
+[2022-09-23T02:22:26,044][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-monitoring]
+[2022-09-23T02:22:26,044][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-ql]
+[2022-09-23T02:22:26,044][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-rollup]
+[2022-09-23T02:22:26,044][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-security]
+[2022-09-23T02:22:26,044][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-shutdown]
+[2022-09-23T02:22:26,044][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-sql]
+[2022-09-23T02:22:26,044][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-stack]
+[2022-09-23T02:22:26,045][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-text-structure]
+[2022-09-23T02:22:26,045][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-voting-only-node]
+[2022-09-23T02:22:26,045][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded module [x-pack-watcher]
+[2022-09-23T02:22:26,045][INFO ][o.e.p.PluginsService     ] [daves-MacBook-Pro.local] loaded plugin [analysis-arirang]
+[2022-09-23T02:22:26,100][INFO ][o.e.e.NodeEnvironment    ] [daves-MacBook-Pro.local] using [1] data paths, mounts [[/System/Volumes/Data (/dev/disk1s1)]], net usable_space [138.5gb], net total_space [465.6gb], types [apfs]
+[2022-09-23T02:22:26,101][INFO ][o.e.e.NodeEnvironment    ] [daves-MacBook-Pro.local] heap size [8gb], compressed ordinary object pointers [true]
+[2022-09-23T02:22:26,277][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] node name [daves-MacBook-Pro.local], node ID [IUnpkDbmRNuNEdZzf2sIgA], cluster name [elasticsearch], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2022-09-23T02:22:31,340][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [daves-MacBook-Pro.local] [controller/18093] [Main.cc@122] controller (64 bit): Version 7.15.0 (Build d0ab43b6c551f8) Copyright (c) 2021 Elasticsearch BV
+[2022-09-23T02:22:31,943][INFO ][o.e.x.s.a.s.FileRolesStore] [daves-MacBook-Pro.local] parsed [0] roles from file [/Users/dave/iWorks/fastcampus/training/elasticsearch/config/roles.yml]
+[2022-09-23T02:22:32,770][INFO ][o.e.i.g.LocalDatabases   ] [daves-MacBook-Pro.local] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/Users/dave/iWorks/fastcampus/training/elasticsearch/config/ingest-geoip] for changes
+[2022-09-23T02:22:32,772][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] initialized database registry, using geoip-databases directory [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17733648369807620902/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA]
+[2022-09-23T02:22:33,535][INFO ][o.e.t.NettyAllocator     ] [daves-MacBook-Pro.local] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=4mb}]
+[2022-09-23T02:22:33,619][INFO ][o.e.d.DiscoveryModule    ] [daves-MacBook-Pro.local] using discovery type [zen] and seed hosts providers [settings]
+[2022-09-23T02:22:34,158][INFO ][o.e.g.DanglingIndicesState] [daves-MacBook-Pro.local] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2022-09-23T02:22:34,727][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] initialized
+[2022-09-23T02:22:34,727][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] starting ...
+[2022-09-23T02:22:34,798][INFO ][o.e.x.s.c.f.PersistentCache] [daves-MacBook-Pro.local] persistent cache index loaded
+[2022-09-23T02:22:34,969][INFO ][o.e.t.TransportService   ] [daves-MacBook-Pro.local] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2022-09-23T02:22:35,602][WARN ][o.e.b.BootstrapChecks    ] [daves-MacBook-Pro.local] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2022-09-23T02:22:35,603][INFO ][o.e.c.c.Coordinator      ] [daves-MacBook-Pro.local] cluster UUID [bGmXJupNTiCHOB76FHwB-Q]
+[2022-09-23T02:22:35,614][INFO ][o.e.c.c.ClusterBootstrapService] [daves-MacBook-Pro.local] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2022-09-23T02:22:35,754][INFO ][o.e.c.s.MasterService    ] [daves-MacBook-Pro.local] elected-as-master ([1] nodes joined)[{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{ubl6S93XTJa7aOJuF_ki8g}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 4, version: 96, delta: master node changed {previous [], current [{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{ubl6S93XTJa7aOJuF_ki8g}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}
+[2022-09-23T02:22:35,917][INFO ][o.e.c.s.ClusterApplierService] [daves-MacBook-Pro.local] master node changed {previous [], current [{daves-MacBook-Pro.local}{IUnpkDbmRNuNEdZzf2sIgA}{ubl6S93XTJa7aOJuF_ki8g}{127.0.0.1}{127.0.0.1:9300}{cdfhilmrstw}]}, term: 4, version: 96, reason: Publication{term=4, version=96}
+[2022-09-23T02:22:35,992][INFO ][o.e.h.AbstractHttpServerTransport] [daves-MacBook-Pro.local] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2022-09-23T02:22:35,993][INFO ][o.e.n.Node               ] [daves-MacBook-Pro.local] started
+[2022-09-23T02:22:36,487][INFO ][o.e.l.LicenseService     ] [daves-MacBook-Pro.local] license [25b0a7c8-4d17-4c5d-bc79-82d5bde73837] mode [basic] - valid
+[2022-09-23T02:22:36,490][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [daves-MacBook-Pro.local] Active license is now [BASIC]; Security is disabled
+[2022-09-23T02:22:36,490][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [daves-MacBook-Pro.local] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security.
+[2022-09-23T02:22:36,500][INFO ][o.e.g.GatewayService     ] [daves-MacBook-Pro.local] recovered [8] indices into cluster_state
+[2022-09-23T02:22:38,096][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] updating geoip databases
+[2022-09-23T02:22:38,097][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]
+[2022-09-23T02:22:39,023][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp
+[2022-09-23T02:22:39,394][INFO ][o.e.c.r.a.AllocationService] [daves-MacBook-Pro.local] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.kibana-event-log-7.15.0-000001][0], [.ds-ilm-history-5-2022.09.22-000001][0], [.geoip_databases][0]]]).
+[2022-09-23T02:22:39,681][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-Country.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17733648369807620902/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb.tmp.gz]
+[2022-09-23T02:22:39,698][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-ASN.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17733648369807620902/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb.tmp.gz]
+[2022-09-23T02:22:39,699][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] downloading geoip database [GeoLite2-City.mmdb] to [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17733648369807620902/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb.tmp.gz]
+[2022-09-23T02:22:40,016][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp
+[2022-09-23T02:22:40,375][INFO ][o.e.i.g.GeoIpDownloader  ] [daves-MacBook-Pro.local] geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp
+[2022-09-23T02:22:40,380][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17733648369807620902/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-Country.mmdb]
+[2022-09-23T02:22:40,764][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17733648369807620902/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-ASN.mmdb]
+[2022-09-23T02:22:41,985][INFO ][o.e.i.g.DatabaseRegistry ] [daves-MacBook-Pro.local] successfully reloaded changed geoip database file [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17733648369807620902/geoip-databases/IUnpkDbmRNuNEdZzf2sIgA/GeoLite2-City.mmdb]
+[2022-09-23T02:27:25,109][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [logstash-es-2022.09.22] creating index, cause [auto(bulk api)], templates [logstash], shards [1]/[1]
+[2022-09-23T02:27:26,514][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [logstash-es-2022.09.22/IGqtEKK-TWyy4aPcs5ALsA] update_mapping [_doc]
+[2022-09-23T02:27:26,931][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [logstash-es-2022.09.22/IGqtEKK-TWyy4aPcs5ALsA] update_mapping [_doc]
+[2022-09-23T02:28:18,073][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001/hyE7ukUyR6aUcfurlz486g] update_mapping [_doc]
+[2022-09-23T02:28:38,766][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001/hyE7ukUyR6aUcfurlz486g] update_mapping [_doc]
+[2022-09-23T02:28:48,951][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [.async-search] creating index, cause [api], templates [], shards [1]/[0]
+[2022-09-23T02:28:51,126][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001/hyE7ukUyR6aUcfurlz486g] update_mapping [_doc]
+[2022-09-23T02:28:55,108][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [.kibana_7.15.0_001/hyE7ukUyR6aUcfurlz486g] update_mapping [_doc]
+[2022-09-23T02:40:56,875][INFO ][o.e.c.m.MetadataCreateIndexService] [daves-MacBook-Pro.local] [filebeat-es-2022.09.23] creating index, cause [auto(bulk api)], templates [], shards [1]/[1]
+[2022-09-23T02:40:58,481][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [filebeat-es-2022.09.23/cBgio50LTjqbJ6C_nZC32g] create_mapping [_doc]
+[2022-09-23T02:40:58,787][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [filebeat-es-2022.09.23/cBgio50LTjqbJ6C_nZC32g] update_mapping [_doc]
+[2022-09-23T02:42:11,715][INFO ][o.e.c.m.MetadataMappingService] [daves-MacBook-Pro.local] [filebeat-es-2022.09.23/cBgio50LTjqbJ6C_nZC32g] update_mapping [_doc]
+[2022-09-23T02:52:40,602][WARN ][o.e.t.ThreadPool         ] [daves-MacBook-Pro.local] absolute clock went backwards by [1.9s/1912ms] while timer thread was sleeping
+[2022-09-23T03:01:53,298][INFO ][o.e.m.j.JvmGcMonitorService] [daves-MacBook-Pro.local] [gc][2350] overhead, spent [300ms] collecting in the last [1s]

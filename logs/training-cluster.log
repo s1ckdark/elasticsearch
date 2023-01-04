@@ -1,0 +1,22 @@
+[2022-09-19T00:57:00,353][INFO ][o.e.x.m.MlDailyMaintenanceService] [training-node] triggering scheduled [ML] maintenance tasks
+[2022-09-19T00:57:00,821][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [training-node] Deleting expired data
+[2022-09-19T00:57:01,108][INFO ][o.e.x.m.j.r.UnusedStatsRemover] [training-node] Successfully deleted [0] unused stats documents
+[2022-09-19T00:57:01,111][INFO ][o.e.x.m.a.TransportDeleteExpiredDataAction] [training-node] Completed deletion of expired ML data
+[2022-09-19T00:57:01,112][INFO ][o.e.x.m.MlDailyMaintenanceService] [training-node] Successfully completed [ML] maintenance task: triggerDeleteExpiredDataTask
+[2022-09-19T07:28:36,535][WARN ][o.e.t.ThreadPool         ] [training-node] absolute clock went backwards by [2s/2051ms] while timer thread was sleeping
+[2022-09-19T07:54:53,916][WARN ][o.e.t.ThreadPool         ] [training-node] timer thread slept for [8.7m/526406ms] on absolute clock which is above the warn threshold of [5000ms]
+[2022-09-19T07:58:28,566][WARN ][o.e.t.ThreadPool         ] [training-node] timer thread slept for [2.7m/163161ms] on absolute clock which is above the warn threshold of [5000ms]
+[2022-09-19T08:18:05,999][WARN ][o.e.t.ThreadPool         ] [training-node] timer thread slept for [18.8m/1128042ms] on absolute clock which is above the warn threshold of [5000ms]
+[2022-09-19T08:20:46,148][WARN ][o.e.t.ThreadPool         ] [training-node] timer thread slept for [56.6s/56616ms] on absolute clock which is above the warn threshold of [5000ms]
+[2022-09-19T11:01:09,078][INFO ][o.e.x.s.SnapshotRetentionTask] [training-node] starting SLM retention snapshot cleanup task
+[2022-09-19T11:01:09,107][INFO ][o.e.x.s.SnapshotRetentionTask] [training-node] there are no repositories to fetch, SLM retention snapshot cleanup task complete
+[2022-09-19T14:16:02,064][INFO ][o.e.n.Node               ] [training-node] stopping ...
+[2022-09-19T14:16:01,919][INFO ][o.e.x.m.p.NativeController] [training-node] Native controller process has stopped - no new native processes can be started
+[2022-09-19T14:16:02,472][INFO ][o.e.x.w.WatcherService   ] [training-node] stopping watch service, reason [shutdown initiated]
+[2022-09-19T14:16:02,491][INFO ][o.e.x.w.WatcherLifeCycleService] [training-node] watcher has stopped and shutdown
+[2022-09-19T14:16:03,610][INFO ][o.e.n.Node               ] [training-node] stopped
+[2022-09-19T14:16:03,611][INFO ][o.e.n.Node               ] [training-node] closing ...
+[2022-09-19T14:16:03,852][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [training-node] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17750822910543712670/geoip-databases/AjbksVTrSVa5Yr4zoiNemg/GeoLite2-Country.mmdb]
+[2022-09-19T14:16:03,852][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [training-node] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17750822910543712670/geoip-databases/AjbksVTrSVa5Yr4zoiNemg/GeoLite2-ASN.mmdb]
+[2022-09-19T14:16:03,852][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [training-node] evicted [0] entries from cache after reloading database [/var/folders/g5/_k3s4wys1pb2znxts7b_qn4h0000gn/T/elasticsearch-17750822910543712670/geoip-databases/AjbksVTrSVa5Yr4zoiNemg/GeoLite2-City.mmdb]
+[2022-09-19T14:16:03,874][INFO ][o.e.n.Node               ] [training-node] closed
